@@ -1,1 +1,79 @@
-hello
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        
+        <nav>
+            <img src="images/logo.jpg " alt="аватарка" class="logo">
+            <a href="#about">Обо мне</a>
+            <a href="#pets">Петпроекты</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <div class="about-text">
+                <h1>Приветик!</h1>
+                <p>Я Виталя и подал заявку на стажировку в <a href="https://yandex.ru/yaintern/frontend">Яндекс на Fronted'a</a></p>
+                <p>Стек HTML, CSS, JS, React</p>
+                <p>Мне 20 лет. Окончил <a href="https://agkotib.ru/">Ачинский колледж отраслевых технологий и бизнеса</a> в 2026 году.</p>
+                <p>Интерес к программированию появился в школе, когда видел результат своего кода.</p>
+                
+            </div>
+            <div class="about-photo">
+                <img src="images/photo1.jpg" alt="Моя фотография" class="my-photo">
+                <img src="images/cat.png" alt="Моя кошка" class="cat-photo">
+            </div>
+        </section>
+        <section id="pets" class="about">
+            <div class="about-text">
+                <h1>Петпроекты</h1>
+
+                <p class="pet-item">
+                    <strong>Рандомайзер</strong> — Случайные числа в диапазоне, списка и орел и решка
+                    <a href="rand/index.html">Открыть →</a>
+                </p>
+
+                <p class="pet-item">
+                    <strong>Telegram-бот</strong> — напоминания на Python.
+                    <a href="pets/tg-bot.html">Открыть →</a>
+                </p>
+
+                <p class="pet-item">
+                    <strong>Сайт-визитка</strong> — эта страница. HTML, CSS, GitHub Pages.
+                    <a href="index.html">Открыть →</a>
+                </p>
+
+                <p class="pet-item">
+                    <strong>Калькулятор</strong> — простой калькулятор на JS.
+                    <a href="pets/calc.html">Открыть →</a>
+                </p>
+            </div>
+
+            <div class="about-photo">
+                <img src="images/petproject.png" alt="Мои проекты" class="my-photo">
+            </div>
+        </section>
+
+        <section id="contact" class="about">
+            <div class="about-text">
+                <h1>Контакты</h1>
+                <p>Telegram: @omgtag</p>
+                <p>Email: vitaliy.kalinnikov2006@gmail.com</p>
+                <p><a href="https://github.com/amazon06">GitHub</a>: github.com/amazon06</p>
+            </div>
+            <div class="about-photo">
+                <img src="images/mail.png" alt="Связаться со мной">
+            </div>
+        </section>
+    </main>
+    
+    <footer>Созданно исключительно для демонстрации навыков. 2026 @omgtag</footer>
+</body>
+</html>
