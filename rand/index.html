@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рандомайзер — Петпроекты</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<script src="script.js"></script>
+<body>
+    <script src="script.js"></script>
+    <header class="header">
+        <nav>
+            <a href="../../index.html" class="buttonHeader">← Назад</a>
+        </nav>
+    </header>
+
+    <main class="randomizer">
+        <h1>Рандомайзер</h1>
+        <p class="subtitle">Числа, выбор из списка и монетка — всё в одном месте</p>
+
+        <!-- Вкладки -->
+        <div class="tabs">
+            <button class="tab active" data-tab="number">Число</button>
+            <button class="tab" data-tab="list">Из списка</button>
+            <button class="tab" data-tab="coin">Монетка</button>
+        </div>
+
+        <!-- Панель: Число -->
+        <div class="panel active" id="number">
+            <div class="row">
+                <label>
+                    От
+                    <input type="number" id="min" value="1">
+                </label>
+                <label>
+                    До
+                    <input type="number" id="max" value="100">
+                </label>
+            </div>
+            <button class="btn" id="rollNumber">Сгенерировать</button>
+            <div class="result" id="numberResult">—</div>
+        </div>
+
+        <!-- Панель: Из списка -->
+        <div class="panel" id="list">
+            <label>
+                Варианты (каждый с новой строки)
+                <textarea id="listInput">Пицца
+Суши
+Бургер
+Паста
+Шаурма</textarea>
+            </label>
+            <button class="btn" id="rollList">Выбрать</button>
+            <div class="result" id="listResult">—</div>
+        </div>
+
+        <!-- Панель: Монетка -->
+        <div class="panel" id="coin">
+            <button class="btn" id="rollCoin">Подбросить</button>
+            <div class="result" id="coinResult">—</div>
+        </div>
+
+        <!-- История -->
+        <h2 class="history-title">История</h2>
+        <ul class="history" id="history"></ul>
+        <button class="btn btn-clear" id="clearHistory">Очистить историю</button>
+    </main>
+</body>
+</html>
