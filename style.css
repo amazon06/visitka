@@ -140,3 +140,109 @@ p{
 .about-text a:hover {
     color: #003670;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .header {
+        width: 90%;
+        padding: 12px 15px;
+    }
+
+    .header nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttonHeader {
+        font-size: 0.9rem;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px 40px;
+        gap: 25px;
+    }
+
+    .about-text,
+    .about-photo {
+        flex: none;
+        width: 100%;
+    }
+
+    .about-photo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-photo img,
+    .about-photo .my-photo {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .about-photo .cat-photo {
+        width: 90px;
+        top: -15px;
+        right: -10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        line-height: 22px;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        width: 90%;
+        padding: 15px;
+        font-size: 0.85rem;
+    }
+
+    .logo {
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        width: 95%;
+    }
+
+    .header nav {
+        gap: 10px;
+    }
+
+    .buttonHeader {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        padding: 90px 15px 30px;
+    }
+
+    .about-photo img,
+    .about-photo .my-photo {
+        max-width: 220px;
+    }
+
+    .about-photo .cat-photo {
+        width: 70px;
+    }
+
+    footer {
+        width: 95%;
+        font-size: 0.75rem;
+    }
+}

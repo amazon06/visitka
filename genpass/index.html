@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор паролей</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="../index.html" class="buttonHeader">← Назад</a>
+        </nav>
+    </header>
+
+    <main class="randomizer">
+        <h1>Генератор паролей</h1>
+        <p class="subtitle">Надёжный пароль за секунду</p>
+        
+        <div class="panel active">
+            <label>
+                <img src="../images/cat.png" alt="Моя кошка" class="cat-photo">
+                Длина: <span id="lengthValue">12</span>
+                <input type="range" id="length" min="4" max="32" value="12">
+            </label>
+
+            <div class="options">
+                <label class="checkbox">
+                    <input type="checkbox" id="digits" checked>
+                    Цифры
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" id="lower" checked>
+                    Строчные
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" id="upper" checked>
+                    Заглавные
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox" id="symbols">
+                    Символы
+                </label>
+            </div>
+
+            <button class="btn" id="generate">Сгенерировать</button>
+            <div class="result" id="result">—</div>
+            <div class="strength" id="strength"></div>
+            <button class="btn btn-copy" id="copy">Скопировать</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
